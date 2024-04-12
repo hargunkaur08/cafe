@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Example</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-family: "Poppins", Arial, sans-serif;
+            background-image: url('file:///C:/Users/hp/Desktop/web2/Screenshot%202024-04-10%20204211.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .ribbon {
+            width: 100%;
+            background-color: #d8b2ff; /* Lavender color for the ribbon */
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between; /* Evenly distribute space between items */
+            align-items: center; /* Center vertically within the ribbon */
+        }
+
+        /* Style the text on the ribbon */
+        .ribbon-text {
+            color: white;
+            font-size: 36px; /* Increased font size to 36 pixels */
+            font-weight: bold;
+            padding-left: 20px; /* Add left padding to separate from buttons */
+        }
+
+        /* Style the buttons */
+        .ribbon button {
+            background-color: #ff99aa; /* Light pink (rose) color for the buttons */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px; /* Optional: Add rounded corners to the buttons */
+            transition: background-color 0.3s ease; /* Optional: Add smooth color transition */
+            margin: 0 10px; /* Even horizontal spacing between buttons */
+        }
+
+        /* Hover effect for buttons */
+        .ribbon button:hover {
+            background-color: #ff6699; /* Darker pink color on hover */
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ribbon">
+        <div class="ribbon-text">HALL</div>
+        <!-- Link for PARTY HALL button -->
+        <a href="C:\Users\hp\Desktop\web2\decor.html" target="_blank"><button>PARTY HALL</button></a>
+        <!-- Link for DECORATION button -->
+        <a href="C:\Users\hp\Desktop\web2\decor.html" target="_blank"><button>DECORATION</button></a>
+        <!-- Link for CAKES button -->
+        <a href="C:\Users\hp\Desktop\web2\cakesv.html" target="_blank"><button>CAKES</button></a>
+    </div>
+
+    
+</body>
+</html>

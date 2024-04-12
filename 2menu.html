@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        body {
+            background-color: #F2D7D7; /* Set background color */
+            text-align: center; /* Center align content */
+            padding-top: 20px; /* Add top padding */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            max-width: 100%; /* Ensure image fits within its container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove any extra space around the image */
+            margin-bottom: 20px; /* Add bottom margin to image */
+        }
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%; /* Ensure full width */
+            margin-right: 20px; /* Add right margin to shift button slightly left */
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="file:///C:/Users/hp/Desktop/web2/Screenshot%202024-04-12%20111253.png" alt="My Image">
+        <div class="button-container">
+            <a href="file:///C:/Users/hp/Desktop/web2/menupdf.html" class="button">View More...</a>
+        </div>
+    </div>
+</body>
+</html>

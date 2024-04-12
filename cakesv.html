@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Video</title>
+    <style>
+        /* Apply styles to the body for full viewport coverage */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            overflow: hidden; /* Hide any overflow */
+            background-color: #DFD5C6; /* Set background color */
+        }
+
+        /* Apply styles to the container for fullscreen video */
+        .fullscreen-content {
+            position: relative;
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Style the video element */
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90vw; /* 90% of viewport width */
+            height: 90vh; /* 90% of viewport height */
+            max-width: none; /* Allow video to exceed container width */
+            max-height: none; /* Allow video to exceed container height */
+        }
+    </style>
+</head>
+<body>
+    <div class="fullscreen-content">
+        <!-- Video element -->
+        <video autoplay muted loop>
+            <source src="file:///C:/Users/hp/Desktop/web2/CAKES.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>

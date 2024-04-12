@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Background Color with Image</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Set the background color and layout */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #C4B3DD;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Prevent horizontal scrolling */
+            position: relative; /* Position relative for absolute positioning */
+        }
+
+        /* Ribbon styles */
+        .ribbon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px; /* Adjust height as needed */
+            background-color: #CAB9C2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ribbon-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #3e2723;
+        }
+
+        /* Optional styles for content */
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%; /* Take up half of the viewport width */
+            height: 100%; /* Full height of the viewport */
+            overflow: hidden; /* Hide overflow content */
+        }
+
+        .content img {
+            max-width: 100%; /* Ensure image fits within its container */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Cover the container with the image */
+        }
+
+        .text-block {
+            padding: 20px; /* Padding around text block */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border: 2px solid #3e2723; /* Border around the text block */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Drop shadow */
+            text-align: center; /* Center-align text */
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif; /* Use Poppins font */
+            font-weight: 700; /* Bold font weight */
+            font-size: 36px;
+            color: #3e2723;
+            margin-bottom: 10px; /* Add margin below heading */
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif; /* Use Poppins font */
+            font-weight: 400; /* Normal font weight */
+            font-size: 18px;
+            color: #3e2723;
+            margin-top: 10px; /* Add margin above paragraph */
+        }
+
+        .address {
+            font-family: 'Poppins', sans-serif; /* Use Poppins font */
+            font-weight: 400; /* Normal font weight */
+            font-size: 16px;
+            color: #3e2723;
+            text-align: right; /* Align text to the right */
+            margin-top: 10px; /* Add margin above address */
+            padding: 10px; /* Padding inside the bordered box */
+            border-radius: 4px; /* Rounded corners */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Ribbon at the top -->
+<div class="ribbon">
+    <span class="ribbon-text">Welcome to Cakes villa & Mi casa bella</span>
+</div>
+
+<!-- Left half: Text content -->
+<div class="content">
+    <div class="text-block">
+        <h1>Cakes villa & Mi casa bella</h1>
+        <p class="sub-text">bakery and restaurant</p>
+        <p class="address">Aneja Medicos, Patel Nagar, Narwana, Haryana 126116</p>
+    </div>
+</div>
+
+<!-- Right half: Image -->
+<div class="content">
+    <img src="C:\Users\hp\Desktop\interior.jpg" alt="Interior Image" />
+</div>
+
+</body>
+</html>
